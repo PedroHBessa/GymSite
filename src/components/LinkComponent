@@ -1,0 +1,16 @@
+import { Link, useRouteMatch } from "react-router-dom";
+
+function LinkComponent({ label, to, activeOnlyWhenExact }) {
+  let match = useRouteMatch({
+    path: to,
+    exact: activeOnlyWhenExact,
+  });
+
+  return (
+    <div className={match ? "active" : ""}>
+      console.log({match && <button>dsad</button>})<Link to={to}></Link>
+    </div>
+  );
+}
+
+export default LinkComponent;

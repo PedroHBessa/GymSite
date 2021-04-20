@@ -151,7 +151,7 @@ q {
   margin: 0 10px;
 }
 
-.navbar-menu li button {
+.navbar-menu li a {
   font-size: 14px;
   padding: 10px 20px;
   font-weight: 800;
@@ -160,7 +160,7 @@ q {
   text-decoration: none;
   border-radius: 50px;
 }
-.navbar-menu li button:hover {
+.navbar-menu li a:hover {
   transition: 0.5s;
   color: rgb(255, 255, 255);
   background-color: rgba(202, 4, 4, 0.829);

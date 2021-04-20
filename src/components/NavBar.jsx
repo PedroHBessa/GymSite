@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function NavBar() {
   const colorBtn = {
@@ -14,23 +14,29 @@ function NavBar() {
       <nav className="navbar-menu">
         <ul>
           <li>
-            <Link to="/">
-              <button style={colorBtn}>HOME</button>
-            </Link>
+            <NavLink activeStyle={colorBtn} exact to="/">
+              HOME
+            </NavLink>
           </li>
           <li>
-            <Link to="/plans">
-              <button>PLANOS</button>
-            </Link>
+            <NavLink activeStyle={colorBtn} to="/plans">
+              PLANOS
+            </NavLink>
           </li>
           <li>
-            <button>ESTRUTURA</button>
+            <NavLink activeStyle={colorBtn} to="/structure">
+              ESTRUTURA
+            </NavLink>
           </li>
           <li>
-            <button>REABERTURAS</button>
+            <NavLink activeStyle={colorBtn} to="/reopen">
+              REABERTURA
+            </NavLink>
           </li>
           <li>
-            <button>CONTATO</button>
+            <NavLink activeStyle={colorBtn} to="/contacts">
+              CONTATO
+            </NavLink>
           </li>
         </ul>
       </nav>
