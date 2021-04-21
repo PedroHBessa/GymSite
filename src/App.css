@@ -131,18 +131,25 @@ q {
   width: 100%;
 }
 
+@media screen and (max-width: 815px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .navbar-logo {
-  width: 25%;
+  width: 10%;
 }
 .navbar-menu {
   display: flex;
   flex-direction: column;
 
-  width: 35%;
+  width: 90%;
 }
 .navbar-menu ul {
   display: flex;
-  justify-content: center;
+  margin-right: 5%;
+  justify-content: flex-end;
 }
 
 .navbar-menu li {
@@ -185,7 +192,7 @@ q {
   height: calc(100vh - 76px);
 }
 
-img {
+.pages img {
   width: 100vw;
   opacity: 0.5;
 }
@@ -265,4 +272,87 @@ img {
   border-radius: 0 0 50px 50px;
   border: solid 4px rgb(202, 4, 4);
   background-color: rgb(202, 202, 202);
+}
+
+/*------------------- NAVBAR MOBILE ------------------- */
+
+.nav-bar-mobile {
+  text-align: center;
+  background-color: black;
+  position: relative;
+  z-index: 99;
+}
+
+@media screen and (min-width: 815px) {
+  .nav-bar-mobile {
+    display: none;
+  }
+  .nav-bar-mobile-window {
+    display: none;
+  }
+}
+
+.btn-menu {
+  background-color: black;
+}
+
+/*------------------- NAVBAR MOBILE WINDOW------------------- */
+
+.nav-bar-mobile-window {
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.link-nav-bar a:hover {
+  color: rgb(169, 172, 169);
+}
+
+.window-active {
+  transition: 0.5s;
+  transform: translateY(0);
+}
+
+.window-inactive {
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.nav-bar-mobile-window ul li {
+  padding: 15px 0;
+}
+
+.link-nav-bar a {
+  font-family: "DEVIOUS Regular";
+  font-size: 1.2em;
+  cursor: pointer;
+  letter-spacing: 3px;
+  transition: color 0.4s, font-size 0.4s;
+  padding-bottom: 10px;
+  width: 100%;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.link-nav-bar a:hover {
+  color: rgb(169, 172, 169);
+}
+
+@media screen and (max-width: 550px) {
+  .nav-bar-mobile-window ul li {
+    padding: 0;
+  }
+
+  .link-nav-bar a {
+    padding: 15px 0;
+    display: inline-block;
+  }
+
+  .link-nav-bar a:hover {
+    color: rgb(169, 172, 169);
+
+    border-bottom: none;
+  }
 }
