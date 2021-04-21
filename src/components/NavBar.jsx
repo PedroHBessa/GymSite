@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/imgs/logo-dao.jpeg";
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -10,7 +11,10 @@ function NavBar() {
 
   return (
     <div className="navbar">
-      <nav className="navbar-logo">LOGO</nav>
+      <nav className="navbar-logo">
+        <img src={logo} alt="" />
+        <p>ACADEMIA DAO TRAINING</p>
+      </nav>
       <nav className="navbar-menu">
         <ul>
           <li>
@@ -19,20 +23,16 @@ function NavBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink activeStyle={colorBtn} to="/plans">
-              PLANOS
+            <NavLink activeStyle={colorBtn} to="/modalities">
+              MODALIDADES
             </NavLink>
           </li>
           <li>
             <NavLink activeStyle={colorBtn} to="/structure">
-              ESTRUTURA
+              LOCALIZAÇÃO
             </NavLink>
           </li>
-          <li>
-            <NavLink activeStyle={colorBtn} to="/reopen">
-              REABERTURA
-            </NavLink>
-          </li>
+
           <li>
             <NavLink activeStyle={colorBtn} to="/contacts">
               CONTATO

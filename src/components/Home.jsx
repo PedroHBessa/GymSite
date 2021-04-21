@@ -1,6 +1,5 @@
 import Carousel1 from "./Carousel1.jsx";
 import SliderData from "../components/SliderData";
-import Plans from "../components/Plans";
 
 function Home() {
   return (

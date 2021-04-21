@@ -56,7 +56,8 @@ tfoot,
 thead,
 tr,
 th,
-td {
+td,
+figure {
   margin: 0;
   padding: 0;
   border: 0;
@@ -125,10 +126,14 @@ q {
   display: flex;
   justify-content: center;
   color: white;
-  padding: 30px 0;
+  padding: 10px 0;
   width: 1280px;
   background-color: black;
   width: 100%;
+}
+
+.navbar-logo img {
+  width: 80%;
 }
 
 @media screen and (max-width: 815px) {
@@ -138,13 +143,24 @@ q {
 }
 
 .navbar-logo {
-  width: 10%;
+  display: flex;
+  position: relative;
+  left: -100px;
+  align-items: center;
+
+  font-size: 1.3em;
+  width: 100px;
+}
+
+.navbar-logo p {
+  margin-left: 20%;
 }
 .navbar-menu {
   display: flex;
   flex-direction: column;
 
-  width: 90%;
+  justify-content: center;
+  min-width: 60%;
 }
 .navbar-menu ul {
   display: flex;
@@ -177,7 +193,7 @@ q {
 
 .slider {
   position: relative;
-  top: 76px;
+
   transition: 1s;
   overflow: hidden;
   display: flex;
@@ -192,8 +208,9 @@ q {
   height: calc(100vh - 76px);
 }
 
-.pages img {
+.pages .home .slider img {
   width: 100vw;
+
   opacity: 0.5;
 }
 
@@ -272,6 +289,7 @@ q {
   border-radius: 0 0 50px 50px;
   border: solid 4px rgb(202, 4, 4);
   background-color: rgb(202, 202, 202);
+  height: 350px;
 }
 
 /*------------------- NAVBAR MOBILE ------------------- */
@@ -355,4 +373,66 @@ q {
 
     border-bottom: none;
   }
+}
+
+/*-------------------MODALITIES------------------- */
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-hero img {
+  width: 100vw;
+  height: 400px;
+  margin-top: 76px;
+}
+
+.modal-hero figcaption {
+  position: relative;
+  top: -100px;
+  left: 20%;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(230, 230, 230);
+  opacity: 0.9;
+  font-weight: bold;
+  text-shadow: 3px 3px #000000;
+}
+
+.modals {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  margin-bottom: 5%;
+  box-shadow: 6px 9px 29px -12px rgba(0, 0, 0, 0.78);
+  background-color: rgb(238, 238, 238);
+  border-radius: 0 10px 10px 0;
+}
+
+.modal-figure {
+  width: 80%;
+}
+
+.modal-figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-text {
+  width: 100%;
+}
+
+/*-------------------FOOTER------------------- */
+
+.footer-main {
 }

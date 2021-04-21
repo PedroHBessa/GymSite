@@ -1,5 +1,5 @@
 import Home from "../components/Home";
-import Plans from "../components/Plans";
+import Modalities from "../components/Modalities";
 import { BrowserRouter as Route, Switch } from "react-router-dom";
 
 function Pages() {
@@ -9,8 +9,8 @@ function Pages() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/plans">
-          <Plans />
+        <Route path="/modalities">
+          <Modalities />
         </Route>
       </Switch>
     </div>

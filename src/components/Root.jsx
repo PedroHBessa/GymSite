@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar";
 import NavBarMobile from "../components/NavBarMobile";
 import Pages from "../components/Pages";
 import { BrowserRouter as Router } from "react-router-dom";
+import Footer from "./Footer";
 
 function Root() {
   return (
@@ -11,6 +12,7 @@ function Root() {
           <NavBar />
           <NavBarMobile />
           <Pages />
+          <Footer />
         </Router>
       </div>
     </div>
