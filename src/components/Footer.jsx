@@ -17,6 +17,8 @@ function Footer() {
         <div className="footer-smedia">
           <div className="fb">FB ICON</div>
           <div className="ig">IG ICON</div>
+          <div className="ig">WPP ICON</div>
+          <div className="ig">TT ICON</div>
         </div>
       </div>
     </div>
