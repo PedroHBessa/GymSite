@@ -1,3 +1,6 @@
+import fb from "./../assets/imgs/fb-icon.png";
+import ig from "./../assets/imgs/ig-icon.png";
+
 function Footer() {
   return (
     <div className="footer-main">
@@ -5,20 +8,28 @@ function Footer() {
         <div className="footer-logo">LOGO</div>
         <div className="footer-menu">
           <ul>
-            <li>INSTITUCIONAL</li>
+            <li>
+              <a href="/">INSTITUCIONAL</a>
+            </li>
           </ul>
           <ul>
-            <li>SOBRE</li>
+            <li>
+              <a href="/">SOBRE</a>
+            </li>
           </ul>
           <ul>
-            <li>FALE CONOSCO</li>
+            <li>
+              <a href="/">FALE CONOSCO</a>
+            </li>
           </ul>
         </div>
         <div className="footer-smedia">
-          <div className="fb">FB ICON</div>
-          <div className="ig">IG ICON</div>
-          <div className="ig">WPP ICON</div>
-          <div className="ig">TT ICON</div>
+          <div className="fb">
+            <img src={fb} alt="" />
+          </div>
+          <div className="ig">
+            <img src={ig} alt="" />
+          </div>
         </div>
       </div>
     </div>

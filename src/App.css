@@ -435,4 +435,47 @@ q {
 /*-------------------FOOTER------------------- */
 
 .footer-main {
+  background-color: #000000;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.footer-logo {
+  flex-basis: 0;
+  flex-grow: 0.5;
+}
+
+.footer-menu {
+  flex-basis: 0;
+  flex-grow: 1.5;
+}
+
+.footer-menu a {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+  font-size: 12px;
+  padding: 10px 20px;
+  font-weight: 800;
+  color: rgb(128, 127, 127);
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footer-smedia {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+
+  justify-content: center;
+  cursor: pointer;
 }
