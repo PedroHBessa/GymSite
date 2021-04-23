@@ -17,25 +17,93 @@ function Modalities() {
             <figure className="modal-figure">
               <img src={pool} alt="" />
             </figure>
-            <p className="modal-text">TEXT</p>
+            <div className="modal-text">
+              <p className="modal-text-tittle">TITTLE</p>
+              <p className="modal-text-description">
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+              </p>
+              <a href="/" className="modal-btn">
+                Saiba mais
+              </a>
+            </div>
           </div>
           <div className="modal">
             <figure className="modal-figure">
               <img src={gym} alt="" />
             </figure>
-            <p className="modal-text">TEXT</p>
+            <div className="modal-text">
+              <p className="modal-text-tittle">TITTLE</p>
+              <p className="modal-text-description">
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+              </p>
+              <a href="/" className="modal-btn">
+                Saiba mais
+              </a>
+            </div>
           </div>
           <div className="modal">
             <figure className="modal-figure">
               <img src={run} alt="" />
             </figure>
-            <p className="modal-text">TEXT</p>
+            <div className="modal-text">
+              <p className="modal-text-tittle">TITTLE</p>
+              <p className="modal-text-description">
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+              </p>
+              <a href="/" className="modal-btn">
+                Saiba mais
+              </a>
+            </div>
           </div>
           <div className="modal">
             <figure className="modal-figure">
               <img src={cross} alt="" />
             </figure>
-            <p className="modal-text">TEXT</p>
+            <div className="modal-text">
+              <p className="modal-text-tittle">TITTLE</p>
+              <p className="modal-text-description">
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+                description
+                <br />
+              </p>
+              <a href="/" className="modal-btn">
+                Saiba mais
+              </a>
+            </div>
           </div>
         </div>
       </div>
